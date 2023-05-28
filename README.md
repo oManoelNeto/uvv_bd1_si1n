@@ -18,12 +18,12 @@ Um Problem Set (PSET) é um conjunto de tarefas difíceis que o forçam a estuda
 ## Implementação do Projeto Lógico
 Para recriar o projeto lógico que nos foi passado, utilizei o **SQL Power Architect**, e a partir dele, recriei todas as tabelas, colunas e seus atributos, adicionando comentários, de modo a facilitar o entendimento de cada tabela e coluna, também foi criado chaves primárias, chaves estrangeiras, chaves compostas, cardinalidades e relacionamentos. Com isso, foram gerados os seguintes arquivos:
 
-* **[arquivo.architect](https://github.com/oManoelNeto/uvv_bd1_si1n/blob/main/pset1/si1n_202306103_postgresql.architect)** -> código do diagrama gerado pelo SQL Power Architect.
+* **[arquivo.architect](https://github.com/oManoelNeto/uvv_bd1_si1n/blob/main/pset1/si1n_202307958_postgresql.architect)** -> código do diagrama gerado pelo SQL Power Architect.
 * **[arquivo.pdf](https://github.com/oManoelNeto/uvv_bd1_si1n/blob/main/pset1/si1n_202307958_postgresql.pdf)** -> imagem do diagrama gerado pelo SQL Power Architect.
 
 ## Implementação do Banco de Dados
  Para a implementação do Banco de Dados, eu transferi o código gerado pelo **SQL Power Architect** para o **EMACs**, em seguida, adicionei códigos SQL para a criação e implementação   do Banco de Dados, adicionando comentários em cada um deles, de modo à facilitar o entendimento do procedimento realizado para a criação do Banco de Dados para qualquer pessoa. Com isso foi gerado o seguinte arquivo:
- * **[arquivo.sql](https://github.com/oManoelNeto/uvv_bd1_si1n/blob/main/pset1/si1n_202306103_postgresql.sql)** -> script sql
+ * **[arquivo.sql](https://github.com/oManoelNeto/uvv_bd1_si1n/blob/main/pset1/si1n_202307958_postgresql.sql)** -> script sql
  
  
  Todos os códigos usados para a criação do banco de dados estão na tabela abaixo.
