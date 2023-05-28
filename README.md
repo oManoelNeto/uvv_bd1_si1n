@@ -13,9 +13,9 @@ Um Problem Set (PSET) é um conjunto de tarefas difíceis que o forçam a estuda
 ### Informações
 * Software utilizado para criação do projeto lógico: SQL Power Architect
 * Software utilizado para codificação e criação do Banco de Dados: EMACs
-* SGBD = PostgreSQL
-* Banco de Dados = uvv
-* Esquema Lógico = Lojas
+* SGBD Utilizado: PostgreSQL
+* Banco de Dados: uvv
+* Esquema Lógico: Lojas
 
 ## Implementação do Projeto Lógico
 Para recriar o projeto lógico que nos foi passado, utilizei o **SQL Power Architect**, e a partir dele, recriei todas as tabelas, colunas e seus atributos, adicionando comentários, de modo a facilitar o entendimento de cada tabela e coluna, também foi criado chaves primárias, chaves estrangeiras, chaves compostas, cardinalidades e relacionamentos. Com isso, foram gerados os seguintes arquivos:
@@ -57,7 +57,7 @@ Para recriar o projeto lógico que nos foi passado, utilizei o **SQL Power Archi
 psql -U postgres < si1n_202307958_postgresql
 ```
 
- ## Finalização da PSET
+ ## Finalização do PSET
  
  Após corrigir e testar o script diversas vezes para ter certeza de que não haveria nenhum erro em sua execução, foi estudado sobre **Git/GitHub** com o intuito de aprender melhor sobre Sistemas de Controle de Versões e sobre a plataforma de hospedagem para projetos git, o GitHub. Após aprender sobre o conteúdo estudado e enviar os arquivos da atividade pro GitHub, por fim, estudei sobre **Flavored Markdown** para aprender a documentar tudo o que eu fiz nessa atividade.
  
