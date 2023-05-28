@@ -27,31 +27,7 @@ Para recriar o projeto lógico que nos foi passado, utilizei o **SQL Power Archi
  Para a implementação do Banco de Dados, eu transferi o código gerado pelo **SQL Power Architect** para o **EMACs**, em seguida, adicionei códigos SQL para a criação e implementação   do Banco de Dados, adicionando comentários em cada um deles, de modo à facilitar o entendimento do procedimento realizado para a criação do Banco de Dados para qualquer pessoa. Com isso foi gerado o seguinte arquivo:
  * **[arquivo.sql](https://github.com/oManoelNeto/uvv_bd1_si1n/blob/main/pset1/si1n_202307958_postgresql.sql)** -> script sql
  
- 
- Todos os códigos usados para a criação do banco de dados estão na tabela abaixo.
- 
- ### Comandos Utilizados 
- 
- 
- | Sintaxe                | Função                     |
-|---------------------    |----------------------------|
-| DROP DATABASE IF EXISTS | Apagar Banco de Dados existente |
-| DROP USER IF EXISTS     | Apagar Usuário existente   |
-| DROP SCHEMA IF EXISTS   | Apagar Esquema existente   |
-| CREATE DATABASE         | Criar Banco de Dados       |
-| CREATE USER             | Criar Usuário              |
-| SET ROLE                | Define o Usuário Corrente  |
-| SET SEARCH_PATH         | Alterar o Esquema Padrão   |
-| CREATE TABLE            | Criar Tabela               |
-| CREATE SCHEMA           | Criar Esquema Lógico       |
-| ALTER TABLE             | Alterar tabela             |
-| ADD CONSTRAINT          | Adicionar Restrição        |
-| COMMENT ON COLUMN       | Comando de Checagem        |
-| COMMENT ON DATABASE     | Comentar Banco de Dados    |
-| COMMENT ON TABLE        | Comentar Tabela            |
-| COMMENT ON COLUMN       | Comentar Coluna            |
-
-* Caso queira testar o script no seu terminal linux, é só digitar o seguinte comando
+ * Comando para a execução do script em um terminal linux:
 
 ```
 psql -U postgres < si1n_202307958_postgresql
@@ -59,5 +35,5 @@ psql -U postgres < si1n_202307958_postgresql
 
  ## Finalização do PSET
  
- Após corrigir e testar o script diversas vezes para ter certeza de que não haveria nenhum erro em sua execução, foi estudado sobre **Git/GitHub** com o intuito de aprender melhor sobre Sistemas de Controle de Versões e sobre a plataforma de hospedagem para projetos git, o GitHub. Após aprender sobre o conteúdo estudado e enviar os arquivos da atividade pro GitHub, por fim, estudei sobre **Flavored Markdown** para aprender a documentar tudo o que eu fiz nessa atividade.
+ Após corrigir e testar o script diversas vezes para ter certeza de que não haveria nenhum erro em sua execução, foi estudado sobre **Git/GitHub** com o intuito de aprender melhor sobre Sistemas de Controle de Versões e sobre a plataforma de hospedagem para projetos Git, o GitHub. Após aprender sobre o conteúdo estudado e enviar os arquivos da atividade pro GitHub, por fim, estudei sobre **Flavored Markdown** para aprender a documentar tudo o que eu fiz nessa atividade.
  
