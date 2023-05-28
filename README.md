@@ -1,5 +1,7 @@
 # Banco de Dados, Pset-1
 * **Nome do Aluno:** Manoel Furtado Gomes Neto
+* **Matrícula:** 202307958
+* **Turma:** SI1N
 * **Nome do Professor:** Abrantes Araújo Silva Filho
 * **Nome da Monitora:** Suellen Miranda
 
