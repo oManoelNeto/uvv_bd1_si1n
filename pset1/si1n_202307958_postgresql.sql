@@ -1,20 +1,17 @@
---Apagando os banco de dados, esquemas e usuários existentes com os nomes que usaremos.
+--Apagando os banco de dados, e usuários existentes com os nomes que usaremos.
 DROP DATABASE IF EXISTS uvv
-;
-DROP SCHEMA IF EXISTS lojas CASCADE
 ;
 DROP USER IF EXISTS manoel_neto
 ;
 
---Criando o usuário manoel_neto e atribuindo permissões de criar um banco de dados e de criar roles.
+--Criando o usuário manoel_neto e atribuindo permissões de criar um banco de dados e de criar roles e dando uma senha criptografada para ele.
 CREATE USER manoel_neto  WITH
 CREATEDB
 CREATEROLE
 ENCRYPTED PASSWORD 'manoel'
 ;
 
---Selecionando o usuário que criamos e usaremos.
-SET ROLE manoel_neto
+\c 'postgresql://manoel_neto:manoel@localhost/postgres'
 ;
 
 --Criando o Banco de Dados "uvv" e atribuindo suas propriedades. 
@@ -27,11 +24,10 @@ LC_CTYPE =          "pt_BR.UTF-8"
 ALLOW_CONNECTIONS =  true
 ;
 
---Conectando ao Banco de Dados "uvv" e entrando com o usuário "manoel_neto".
+--Conectando-se ao Banco de Dados "uvv".
 \c uvv
-SET ROLE manoel_neto
 ;
-
+--Adicionando comentário para o Banco de Dados.
 COMMENT ON DATABASE uvv IS 'Banco de Dados com todas as informações das Lojas UVV.'
 ;
 
@@ -41,8 +37,11 @@ AUTHORIZATION manoel_neto
 ;
 
 --Definição do esquema "lojas" como padrão.
-ALTER USER manoel_neto
+SET SEARCH_PATH TO lojas, "$USER", public
 ;
+
+--Definição do esquema "lojas" como padrão de forma permanente.
+ALTER USER manoel_neto
 SET SEARCH_PATH TO lojas, "$USER", public   
 ;
 
