@@ -11,6 +11,7 @@ CREATEROLE
 ENCRYPTED PASSWORD 'manoel'
 ;
 
+--Se conectando ao usuário criado.
 \c 'postgresql://manoel_neto:manoel@localhost/postgres'
 ;
 
@@ -309,6 +310,6 @@ CHECK(quantidade >=0)
 --Restrição para que pelo menos um dos endereços tenham que ser preenchidos obrigatoriamente.
 ALTER TABLE lojas
 ADD CONSTRAINT cc_lojas_endereco_fisico
-CHECK(endereco_web IS NOT NULL OR endereco_fisico IS NOT NULL)
+CHECK ((endereco_web IS NOT NULL) OR (endereco_fisico IS NOT NULL))
 ;
 
